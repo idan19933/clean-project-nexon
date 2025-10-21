@@ -1,32 +1,17 @@
 {
-  "name": "nexon-ai-backend",
+  "name": "nexon-server",
   "version": "1.0.0",
-  "description": "Nexon Math Tutor AI Backend Server",
-  "type": "module",
-  "main": "server/ai-proxy.js",
+  "description": "Nexon AI Math Tutor Backend",
+  "main": "ai-proxy.js",
   "scripts": {
     "start": "node ai-proxy.js",
     "dev": "nodemon ai-proxy.js"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
-  },
-  "keywords": [
-    "ai",
-    "education",
-    "math",
-    "tutor"
-  ],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
+    "@anthropic-ai/sdk": "^0.30.0",
     "express": "^4.18.2",
-    "firebase-admin": "^13.5.0",
-    "multer": "^2.0.2",
-    "xlsx": "^0.18.5"
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
